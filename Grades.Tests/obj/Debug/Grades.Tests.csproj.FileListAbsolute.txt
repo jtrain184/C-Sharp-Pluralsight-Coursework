@@ -1,0 +1,7 @@
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Grades.Tests.dll
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Grades.Tests.pdb
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.dll
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.pdb
