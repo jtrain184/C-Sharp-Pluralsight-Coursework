@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Grades
 {
-	class GradeBook
+	public class GradeBook
 	{
 
 		public GradeBook()
@@ -33,6 +33,6 @@ namespace Grades
 			Console.Write(grade + " added to gradebook\n");
 		}
 
-		List<float> grades;  //Field naming convention is lower class
+		private List<float> grades;  //Field naming convention is lower class
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Grades
 {
 
-	class GradeStatistics
+	public class GradeStatistics
 	{
 		public GradeStatistics()
 		{

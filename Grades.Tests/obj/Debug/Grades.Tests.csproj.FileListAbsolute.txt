@@ -5,3 +5,5 @@ C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Mi
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.dll
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\obj\Debug\Grades.Tests.pdb
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Grades.exe
+C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades.Tests\bin\Debug\Grades.pdb
