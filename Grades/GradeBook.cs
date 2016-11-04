@@ -33,6 +33,8 @@ namespace Grades
 			Console.Write(grade + " added to gradebook\n");
 		}
 
+        public string Name;
+
 		private List<float> grades;  //Field naming convention is lower class
 	}
 }
