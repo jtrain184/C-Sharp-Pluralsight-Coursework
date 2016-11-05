@@ -1,0 +1,8 @@
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/bin/Debug/Grades.exe.config
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/bin/Debug/Grades.exe.mdb
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/bin/Debug/Grades.pdb
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/bin/Debug/Grades.exe
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/obj/Debug/Grades.exe
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/obj/Debug/Grades.exe.mdb
+/Users/bman/Documents/C-Sharp-Pluralsight-Coursework/Grades/obj/Debug/Grades.pdb
