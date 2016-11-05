@@ -23,7 +23,6 @@ namespace Grades.Tests.Types
 
 		private void AddGrades(float[] grades)
 		{
-			grades = new float[5];
 			grades[1] = 89.1f;
 		}
 
@@ -40,7 +39,7 @@ namespace Grades.Tests.Types
 		public void UppercaseString()
 		{
 			string name = "phil";
-			name.ToUpper();
+			name = name.ToUpper();
 
 			Assert.AreEqual("PHIL", name);
 		}
@@ -66,7 +65,7 @@ namespace Grades.Tests.Types
             GradeBook book2 = book1;
 
             GiveBookAName(ref book2);
-            Assert.AreEqual("A GradeBook", book1.Name);
+            Assert.AreEqual("A GradeBook", book2.Name);
         }
 
         private void GiveBookAName(ref GradeBook book)
