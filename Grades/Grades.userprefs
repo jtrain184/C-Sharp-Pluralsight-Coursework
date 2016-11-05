@@ -1,13 +1,25 @@
 ﻿<Properties StartupConfiguration="{C7756D6D-8186-4AEF-B9AD-D10229E5DF2A}|Default">
   <MonoDevelop.Ide.ItemProperties.Grades PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Grades.Tests/Types/ReferenceTypeTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GradeBook.cs">
     <Files>
-      <File FileName="GradeBook.cs" Line="17" Column="50" />
-      <File FileName="Program.cs" Line="18" Column="31" />
-      <File FileName="GradeStatistics.cs" Line="7" Column="15" />
-      <File FileName="../Grades.Tests/GradeBookTests.cs" Line="18" Column="19" />
-      <File FileName="../Grades.Tests/Types/ReferenceTypeTests.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="21" Column="19" />
+      <File FileName="GradeStatistics.cs" Line="38" Column="19" />
+      <File FileName="GradeBook.cs" Line="49" Column="18" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Grades" expanded="True">
+            <Node name="Grades" expanded="True">
+              <Node name="GradeBook.cs" selected="True" />
+            </Node>
+            <Node name="Grades.Tests" expanded="True">
+              <Node name="Types" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

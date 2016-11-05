@@ -11,9 +11,18 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-            Console.Write("******Program now running.******\n");
             GradeBook book = new GradeBook();
-            book.NameChanged += OnNameChanged;            
+			book.NameChanged += OnNameChanged;
+			try
+			{
+				Console.WriteLine("Enter a name");
+				book.Name = Console.ReadLine();
+			}
+			catch(ArgumentException ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+
 
             book.Name = "Phil's Grade book";
             book.Name = "Grade book";
@@ -21,13 +30,14 @@ namespace Grades
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
+			book.WriteGrades(Console.Out);
 
             GradeStatistics stats = book.ComputeStatistics();
             Console.WriteLine(book.Name);
             WriteResult("Average", stats.AverageGrade);
             WriteResult("Highest", (int)stats.HighestGrade);
             WriteResult("Lowest", (int)stats.LowestGrade);
-            Console.Write("******Program ended******\n");
+			WriteResult(stats.Description, stats.LetterGrade);
         }
 
         static void OnNameChanged(object sender, NamedChangedEventArgs args)
@@ -35,13 +45,19 @@ namespace Grades
             Console.WriteLine($"Grade book changing name from {args.ExistingName} to {args.NewName}");
         }
 
+		static void WriteResult(string description, string result)
+		{
+			Console.WriteLine(description + ": " + result);
+		}
+
         static void WriteResult(string description, int result)
         {
             Console.WriteLine(description + ": " + result);
         }
+
         static void WriteResult(string description, float result)
         {
-            Console.WriteLine("{0}: {1}", description, result);
+            Console.WriteLine("{0}: {1:F2}", description, result);
         }
     }
 }
