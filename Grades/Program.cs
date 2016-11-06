@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 namespace Grades
@@ -10,37 +11,53 @@ namespace Grades
     class Program
     {
         static void Main(string[] args)
-        {
-            GradeBook book = new GradeBook();
+		{
+			GradeBook book = new GradeBook();
 			book.NameChanged += OnNameChanged;
+			GetBookName(book);
+
+			book.Name = "Phil's Grade book";
+			book.Name = "Grade book";
+			AddGrades(book);
+			SaveGrades(book);
+
+			GradeStatistics stats = book.ComputeStatistics();
+			Console.WriteLine(book.Name);
+			WriteResult("Average", stats.AverageGrade);
+			WriteResult("Highest", (int)stats.HighestGrade);
+			WriteResult("Lowest", (int)stats.LowestGrade);
+			WriteResult(stats.Description, stats.LetterGrade);
+		}
+
+		static void SaveGrades(GradeBook book)
+		{
+			using (StreamWriter outputFile = File.CreateText("grades.txt"))
+			{
+				book.WriteGrades(outputFile);
+			}
+		}
+
+		static void AddGrades(GradeBook book)
+		{
+			book.AddGrade(91);
+			book.AddGrade(89.5f);
+			book.AddGrade(75);
+		}
+
+		static void GetBookName(GradeBook book)
+		{
 			try
 			{
 				Console.WriteLine("Enter a name");
 				book.Name = Console.ReadLine();
 			}
-			catch(ArgumentException ex)
+			catch (ArgumentException ex)
 			{
 				Console.WriteLine(ex.Message);
 			}
+		}
 
-
-            book.Name = "Phil's Grade book";
-            book.Name = "Grade book";
-
-            book.AddGrade(91);
-            book.AddGrade(89.5f);
-            book.AddGrade(75);
-			book.WriteGrades(Console.Out);
-
-            GradeStatistics stats = book.ComputeStatistics();
-            Console.WriteLine(book.Name);
-            WriteResult("Average", stats.AverageGrade);
-            WriteResult("Highest", (int)stats.HighestGrade);
-            WriteResult("Lowest", (int)stats.LowestGrade);
-			WriteResult(stats.Description, stats.LetterGrade);
-        }
-
-        static void OnNameChanged(object sender, NamedChangedEventArgs args)
+		static void OnNameChanged(object sender, NamedChangedEventArgs args)
         {
             Console.WriteLine($"Grade book changing name from {args.ExistingName} to {args.NewName}");
         }
