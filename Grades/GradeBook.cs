@@ -13,8 +13,16 @@ namespace Grades
 			grades = new List<float>();
 		}
 
-		public GradeStatistics ComputeStatistics()
+		 public bool ThrowAwayLowest
 		{
+			get;
+			set;
+		}
+
+		public virtual GradeStatistics ComputeStatistics()
+		{
+			Console.WriteLine("GradeBook::ComputeStatistics");
+
 			GradeStatistics stats = new GradeStatistics();
 
 			float sum = 0;
@@ -71,6 +79,6 @@ namespace Grades
 		public event NameChangedDelegate NameChanged;
 
 		private string _name;
-		private List<float> grades;  //Field naming convention is lower class
+		protected List<float> grades;  //Field naming convention is lower class
 	}
 }

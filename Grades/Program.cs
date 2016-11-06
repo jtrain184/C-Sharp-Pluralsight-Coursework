@@ -12,21 +12,21 @@ namespace Grades
     {
         static void Main(string[] args)
 		{
-			GradeBook book = new GradeBook();
+			GradeBook book = CreateGradeBook();
+
 			book.NameChanged += OnNameChanged;
-			GetBookName(book);
+			//GetBookName(book);
 
 			book.Name = "Phil's Grade book";
 			book.Name = "Grade book";
 			AddGrades(book);
 			SaveGrades(book);
+			WriteResults(book);
+		}
 
-			GradeStatistics stats = book.ComputeStatistics();
-			Console.WriteLine(book.Name);
-			WriteResult("Average", stats.AverageGrade);
-			WriteResult("Highest", (int)stats.HighestGrade);
-			WriteResult("Lowest", (int)stats.LowestGrade);
-			WriteResult(stats.Description, stats.LetterGrade);
+		private static GradeBook CreateGradeBook()
+		{
+			return new ThrowAwayGradeBook();
 		}
 
 		static void SaveGrades(GradeBook book)
@@ -35,6 +35,15 @@ namespace Grades
 			{
 				book.WriteGrades(outputFile);
 			}
+		}
+
+		static void WriteResults(GradeBook book)
+		{
+			GradeStatistics stats = book.ComputeStatistics();
+			WriteResult("Average", stats.AverageGrade);
+			WriteResult("Highest", stats.HighestGrade);
+			WriteResult("Lowest", stats.LowestGrade);
+			WriteResult(stats.Description, stats.LetterGrade);
 		}
 
 		static void AddGrades(GradeBook book)
