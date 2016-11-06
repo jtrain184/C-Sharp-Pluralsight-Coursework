@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{C7756D6D-8186-4AEF-B9AD-D10229E5DF2A}|Default">
   <MonoDevelop.Ide.ItemProperties.Grades PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThrowAwayGradeBook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IGradeTracker.cs">
     <Files>
-      <File FileName="Program.cs" Line="19" Column="4" />
+      <File FileName="Program.cs" Line="15" Column="13" />
       <File FileName="GradeStatistics.cs" Line="38" Column="19" />
-      <File FileName="GradeBook.cs" Line="80" Column="12" />
-      <File FileName="ThrowAwayGradeBook.cs" Line="17" Column="3" />
+      <File FileName="GradeBook.cs" Line="44" Column="5" />
+      <File FileName="ThrowAwayGradeBook.cs" Line="6" Column="19" />
+      <File FileName="GradeTracker.cs" Line="40" Column="12" />
+      <File FileName="IGradeTracker.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Grades" expanded="True">
             <Node name="Grades" expanded="True">
-              <Node name="ThrowAwayGradeBook.cs" selected="True" />
+              <Node name="IGradeTracker.cs" selected="True" />
             </Node>
             <Node name="Grades.Tests" expanded="True">
               <Node name="Types" expanded="True" />

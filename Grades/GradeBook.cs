@@ -1,10 +1,11 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
 namespace Grades
 {
-	public class GradeBook
+	public class GradeBook : GradeTracker
 	{
 
 		public GradeBook()
@@ -19,7 +20,7 @@ namespace Grades
 			set;
 		}
 
-		public virtual GradeStatistics ComputeStatistics()
+		public override GradeStatistics ComputeStatistics()
 		{
 			Console.WriteLine("GradeBook::ComputeStatistics");
 
@@ -36,7 +37,7 @@ namespace Grades
 			return stats;
 		}
 
-		public void WriteGrades(TextWriter destination)
+		public override void WriteGrades(TextWriter destination)
 		{
 			foreach (float grade in grades)
 			{
@@ -45,40 +46,16 @@ namespace Grades
 
 		}
 
-		public void AddGrade(float grade)
+		public override void AddGrade(float grade)
 		{
 			grades.Add(grade);
 		}
 
-		public string Name
+		public override IEnumerator GetEnumerator()
 		{
-			get
-			{
-				return _name;
-			}
-			set
-			{
-				if (String.IsNullOrEmpty(value))
-				{
-					throw new ArgumentException("Name cannot be null or empty");
-				}
-
-					if (_name != value && NameChanged != null)
-					{
-						NamedChangedEventArgs args = new NamedChangedEventArgs();
-						args.ExistingName = _name;
-						args.NewName = value;
-
-						NameChanged(this, args);
-					}
-
-				_name = value;
-
-			}
+			return grades.GetEnumerator();
 		}
-		public event NameChangedDelegate NameChanged;
 
-		private string _name;
 		protected List<float> grades;  //Field naming convention is lower class
 	}
 }
