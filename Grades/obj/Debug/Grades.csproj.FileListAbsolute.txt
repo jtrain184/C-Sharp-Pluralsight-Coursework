@@ -4,3 +4,9 @@ C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades\bin\Debug\Grades.p
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.csprojResolveAssemblyReference.cache
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.exe
 C:\Users\Bman\Documents\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.pdb
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\bin\Debug\Grades.exe.config
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.exe
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.pdb
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\bin\Debug\Grades.exe
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\bin\Debug\Grades.pdb
+C:\Users\JarrettPE\Documents\GitHub\C-Sharp-Pluralsight-Coursework\Grades\obj\Debug\Grades.csprojResolveAssemblyReference.cache
